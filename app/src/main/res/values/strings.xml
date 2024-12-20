@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AIDLSender</string>
+    <string name="message">Type message</string>
 </resources>

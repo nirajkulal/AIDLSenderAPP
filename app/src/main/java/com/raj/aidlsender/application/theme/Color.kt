@@ -1,4 +1,4 @@
-package com.raj.aidlsender.ui.theme
+package com.raj.aidlsender.application.theme
 
 import androidx.compose.ui.graphics.Color
 
