@@ -1,6 +1,7 @@
 package com.raj.aidlsender.di
 
 import com.raj.aidlsender.data.repository.RepositoryImp
+import com.raj.aidlsender.data.service.ServiceManager
 import com.raj.aidlsender.domain.Repository
 import dagger.Module
 import dagger.Provides
@@ -14,7 +15,6 @@ class RepositoryModule {
     @Provides
     @Singleton
     fun providesRepository(): Repository {
-        return RepositoryImp(
-        )
+        return RepositoryImp(ServiceManager())
     }
 }
