@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <permission
-        android:name="com.raj.aidlsender.MessageServicePermission"
-        android:protectionLevel="signature" />
+        android:name="com.raj.aidlsender.permission.ACCESS_SERVICE"
+        android:protectionLevel="normal" />
     <application
         android:name=".application.SenderApplication"
         android:allowBackup="true"
@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
         <service
-            android:permission="com.raj.aidlsender.MessageServicePermission"
+            android:permission="com.raj.aidlsender.permission.ACCESS_SERVICE"
             android:name=".data.service.MessageService"
             android:exported="true">
             <intent-filter>

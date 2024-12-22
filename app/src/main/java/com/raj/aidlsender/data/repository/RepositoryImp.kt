@@ -21,5 +21,6 @@ class RepositoryImp@Inject constructor(val serviceManager: ServiceManager) : Rep
     }
 
     override suspend fun stopService(context: Context) {
+        serviceManager.stopService(context)
     }
 }
