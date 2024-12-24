@@ -30,7 +30,7 @@ class MessageService : Service() {
         return when (intent?.action) {
             "com.raj.aidlsender.service.SendMessage" -> mBinderSendMessage
             "com.raj.aidlsender.service.SetCallback" -> mBinderCallback
-            else -> mBinderCallback
+            else -> null
         }
     }
 }
